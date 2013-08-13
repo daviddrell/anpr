@@ -1,0 +1,63 @@
+; LPROCR_lib_c.def : Declares the module parameters for the DLL.
+
+LIBRARY      "LPROCR_lib_c"
+
+EXPORTS
+    ; Explicit exports can go here
+    LPROCR_lib_Constructor ;
+    LPROCR_lib_init;
+    LPROCR_lib_dispose;
+    LPROCR_lib_findThePlates;
+    LPROCR_lib_getImage;
+    LPROCR_lib_getEdgeMapSub;
+    LPROCR_diags_init;
+    LPROCR_diags_getImage;
+    LPROCR_lib_getEdgeMapFullRes;
+    LPROCR_lib_getPlateLocation;
+    LPROCR_lib_sharpen ;
+    LPROCR_lib_extractFromBmpDataToLumArray;
+    LPROCR_lib_getMaxCandidatePlates;
+    LPROCR_lib_getMaxActualPlates;
+    LPROCR_lib_scoreMatch;
+    LPROCR_plate_diags_init;
+    LPROCR_diags_getPlateImage;
+    LPROCR_lib_findCharsInPlate;
+    LPROCR_lib_getCharLocation;
+    LPROCR_lib_getMaxCandidateChars;
+    LPROCR_lib_ReadThisChar ;
+    scaleArray;
+    prepChar;
+    erode;
+    LPROCR_lib_ReadThisImage;
+    LPROCR_lib_GetNumFoundPlates;
+    LPROCR_lib_GetPlateImage;
+    LPROCR_lib_GetPlateImageSize ;
+    LPROCR_lib_GetPlateString;
+    LPROCR_lib_GetPlateImageRGBArray;
+    LPROCR_lib_GetCharImageRGBArray;
+    LPROCR_lib_GetSubImageSize;
+    LPROCR_lib_RotateImage;
+    LPROCR_lib_unroll;
+    LPROCR_lib_MemCopy;
+    LPROCR_lib_getAveCharWidth;
+    LPROCR_lib_RegisterMotionDetectionCB;
+    LPROCR_lib_MemCopyInt;
+    LPROCR_lib_MemCopyByte;
+    LPROCR_lib_MemCopyBytesToInts;
+    LPROCR_lib_DetectMotion;
+    LPROCR_lib_RegisterPlateGroupCB;
+    Groups_ProcessNewImage;
+    LPROCR_lib_GetMinMaxPlateSize;
+    LPROCR_diags_GetNumCandidatePlates;
+    LPROCR_diags_getCandidatePlateImage;
+    LPROCR_lib_GetCandidatePlateImageSize ;
+    LPROCR_diags_GetRejectLogLength ;
+    LPROCR_diags_GetRejectLog ;
+    LPROCR_diags_getIntegralImage;
+    LPROCR_diags_GetCharImageRGBArray;
+    LPROCR_lib_GetCandidatePlateImageRGBArray;
+	LPROCR_lib_LoadImage;
+	LPROCR_lib_GetCharImageLuminance;
+	LPROCR_lib_ExtractFoundPlates;
+	LPROCR_diags_GetPlateDiagImageRGBArray;
+	LPROCR_diags_PutCharImageToRGBArray;

@@ -1,0 +1,12 @@
+; S2255Interface.def : Declares the module parameters for the DLL.
+
+LIBRARY      "S2255Interface"
+
+EXPORTS
+	Open2255Device;
+	Close2255Device;
+	StartAcquisitionThread;
+	StopAcquisitionThread;
+	SetChannelMode;
+	GetVideoConnectionStatus;
+    ; Explicit exports can go here

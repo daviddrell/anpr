@@ -1,0 +1,136 @@
+;
+; s2255.inf  -- This file contains installation information of 
+; USB driver for Sensoray 2255
+; Copyright : Sensoray Company Inc. 2007
+;
+
+;-------------------------------------------------------------------------------
+; general sections :
+;-------------------------------------------------------------------------------
+
+[Version]
+Signature = "$Windows NT$" 
+Class=Media
+ClassGUID={4d36e96c-e325-11ce-bfc1-08002be10318} 
+Provider=%SENSORAYINC%
+CatalogFile=s2255.cat
+DriverVer=06/16/2009,1.0.15
+
+[ControlFlags]
+; All PnP devices should be excluded from manual AddDevice Applet list
+ExcludeFromSelect=*
+
+[DestinationDirs]
+;DefaultDestDir=10,system32\drivers	; driver directory
+SENSORAYDriver.CopyFiles=10,system32\drivers
+SENSORAYSupport.CopyFiles=10
+
+[Manufacturer]
+%SENSORAYMANUFACTURER%=DeviceList,NTamd64
+
+[DeviceList.NTamd64]
+%Sensoray_2255_DeviceDesc%=DrvInstall,USB\VID_1943&PID_2255
+
+;-------------------------------------------------------------------------------
+; platform install sections
+;-------------------------------------------------------------------------------
+
+
+[DrvInstall]
+CopyFiles=SENSORAYDriver.CopyFiles,SENSORAYSupport.CopyFiles
+AddReg=DrvInstall.AddReg
+ 
+
+[DrvInstall.NT]
+CopyFiles=SENSORAYDriver.CopyFiles,SENSORAYSupport.CopyFiles
+AddReg=DrvInstall.AddReg
+
+[DrvInstall.NTamd64]
+CopyFiles=SENSORAYDriver.CopyFiles,SENSORAYSupport.CopyFiles
+AddReg=DrvInstall.AddReg
+ 											
+
+[DrvInstall.AddReg]
+HKR,,DevLoader,,*NTKERN
+HKR,,NTMPDriver,,s2255.sys
+
+
+
+[SENSORAYDriver.CopyFiles]
+s2255.sys
+f2255usb.bin
+
+
+[SENSORAYSupport.CopyFiles]
+
+[SourceDisksNames]
+1=%SENSORAYInstallDisk%,,,""
+
+[SourceDisksFiles]
+s2255.sys=1
+f2255usb.bin=1
+
+;-------------------------------------------------------------------------------
+; services sections
+;-------------------------------------------------------------------------------
+
+[DrvInstall.NT.Services]
+AddService=SX2255VIDEO, 0x00000002, DrvInstall.ServiceInstall
+
+[DrvInstall.NTamd64.Services]
+AddService=SX2255VIDEO, 0x00000002, DrvInstall.ServiceInstall
+
+
+[DrvInstall.ServiceInstall]
+DisplayName=%Sensoray_2255_DeviceDesc%
+ServiceType=%SERVICE_KERNEL_DRIVER%
+StartType=%SERVICE_DEMAND_START%
+ErrorControl=%SERVICE_ERROR_NORMAL%
+ServiceBinary=%10%\system32\drivers\s2255.sys
+
+
+
+
+;-------------------------------------------------------------------------------
+; interfaces sections
+;-------------------------------------------------------------------------------
+
+[DrvInstall.Interfaces]
+
+
+[DrvInstall.NT.Interfaces]
+
+[DrvInstall.NTamd64.Interfaces]
+
+         
+[DrvInstall.Intf.AV.AddReg]
+HKR,,CLSID,,%ProxyVCap.CLSID%
+HKR,,FriendlyName,,%Sensoray_2255_DeviceDesc%
+
+
+;-------------------------------------------------------------------------------
+; string sections
+;-------------------------------------------------------------------------------
+
+[Strings]
+
+;----------------
+; Non-Localizable
+;----------------
+
+; note: only register value is case sensitive, key is not.
+S2255DeviceId="{93941E1B-1EC0-498d-AF3B-2818FC48E755}"
+
+SERVICE_KERNEL_DRIVER=1
+SERVICE_DEMAND_START=3
+SERVICE_ERROR_NORMAL=1
+
+;----------------
+; Localizable
+;----------------
+
+USB\VID_1943&PID_2255.DeviceDesc="Sensoray 2255 Video"
+SENSORAYINC="Sensoray Company Inc."
+SENSORAYMANUFACTURER="Sensoray Company Inc."
+Sensoray_2255_DeviceDesc="Sensoray 2255 Video"
+SENSORAYInstallDisk="SENSORAY Install CD"

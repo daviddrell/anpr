@@ -1,0 +1,225 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="3.5" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.21022</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{38C5ABFA-3D14-46B2-A056-B7C3478DC4E4}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Control_Center</RootNamespace>
+    <AssemblyName>Control Center</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>..\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>..\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="GetLogin.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="GetLogin.Designer.cs">
+      <DependentUpon>GetLogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FirstTimeLogin.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="FirstTimeLogin.Designer.cs">
+      <DependentUpon>FirstTimeLogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ControlCenterMainForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ControlCenterMainForm.Designer.cs">
+      <DependentUpon>ControlCenterMainForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ListViewControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ListViewControl.Designer.cs">
+      <DependentUpon>ListViewControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LiveView.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="LiveView.Designer.cs">
+      <DependentUpon>LiveView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LoginPWPrompt.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LoginPWPrompt.Designer.cs">
+      <DependentUpon>LoginPWPrompt.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MultiLevelDataGrid.cs" />
+    <Compile Include="NotLoggedInUC.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="NotLoggedInUC.Designer.cs">
+      <DependentUpon>NotLoggedInUC.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Player.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Player.Designer.cs">
+      <DependentUpon>Player.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="GetLogin.resx">
+      <DependentUpon>GetLogin.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FirstTimeLogin.resx">
+      <DependentUpon>FirstTimeLogin.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ControlCenterMainForm.resx">
+      <DependentUpon>ControlCenterMainForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ListViewControl.resx">
+      <DependentUpon>ListViewControl.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LiveView.resx">
+      <DependentUpon>LiveView.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LoginPWPrompt.resx">
+      <DependentUpon>LoginPWPrompt.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NotLoggedInUC.resx">
+      <DependentUpon>NotLoggedInUC.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Player.resx">
+      <DependentUpon>Player.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SelectRemoteSystem.resx">
+      <DependentUpon>SelectRemoteSystem.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StatsViewer.resx">
+      <DependentUpon>StatsViewer.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="SelectRemoteSystem.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="SelectRemoteSystem.Designer.cs">
+      <DependentUpon>SelectRemoteSystem.cs</DependentUpon>
+    </Compile>
+    <Compile Include="StatsViewer.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="StatsViewer.Designer.cs">
+      <DependentUpon>StatsViewer.cs</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\ApplicationData\ApplicationData.csproj">
+      <Project>{3A8B6996-00B5-4519-B0FF-8B0248B8C66C}</Project>
+      <Name>ApplicationData</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Encryption\Encryption.csproj">
+      <Project>{4416774A-4525-4703-89FC-D64422DF703F}</Project>
+      <Name>Encryption</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ErrorLoggingLib\ErrorLoggingLib.csproj">
+      <Project>{930EBC8F-262C-40E8-A9FC-F1C4CEC27683}</Project>
+      <Name>ErrorLoggingLib</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Paths\Paths.csproj">
+      <Project>{42DC7D30-3AD6-462B-A298-597C3D2095A3}</Project>
+      <Name>Paths</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\RCSClient\RCSClient.csproj">
+      <Project>{3FDA52F7-2DBD-4895-AAB1-BF186723DE58}</Project>
+      <Name>RCSClient</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\RCS_Protocol\RCS_Protocol.csproj">
+      <Project>{9735468A-4433-4A30-8DED-03D111846A58}</Project>
+      <Name>RCS_Protocol</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\RemoteHostsLib\RemoteHostsLib.csproj">
+      <Project>{6F3C42A6-DF17-490A-80A0-4310C0D5D8A4}</Project>
+      <Name>RemoteHostsLib</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ScreenLogger\ScreenLogger.csproj">
+      <Project>{4BCFE3D9-8361-4DB5-8CD5-13AF5803BAED}</Project>
+      <Name>ScreenLogger</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\UserSettingsLib\UserSettingsLib.csproj">
+      <Project>{F1298AA7-7CEA-4420-A495-EFDE0B92CAEF}</Project>
+      <Name>UserSettingsLib</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Utilities\Utilities.csproj">
+      <Project>{0D64B43A-14F2-4D5C-A204-932C949D5B80}</Project>
+      <Name>Utilities</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

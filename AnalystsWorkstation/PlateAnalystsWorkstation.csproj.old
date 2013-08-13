@@ -1,0 +1,201 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="3.5" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{AD78BD95-087B-47AB-A7BA-930D0AA33C11}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>AnalystsWorkstation</RootNamespace>
+    <AssemblyName>AnalystsWorkstation</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>..\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <PlatformTarget>x86</PlatformTarget>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>..\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <PlatformTarget>x86</PlatformTarget>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>..\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <OutputPath>..\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AnalystsWorkstationMainForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AnalystsWorkstationMainForm.Designer.cs">
+      <DependentUpon>AnalystsWorkstationMainForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DiagMethods.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EditModeMethods.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GenerateOCRLib.cs" />
+    <Compile Include="ImportImageDrive.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ImportImageDrive.Designer.cs">
+      <DependentUpon>ImportImageDrive.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="AnalystsWorkstationMainForm.resx">
+      <DependentUpon>AnalystsWorkstationMainForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ImportImageDrive.resx">
+      <DependentUpon>ImportImageDrive.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\ApplicationData\ApplicationData.csproj">
+      <Project>{3A8B6996-00B5-4519-B0FF-8B0248B8C66C}</Project>
+      <Name>ApplicationData</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\DVR\DVR.csproj">
+      <Project>{5399E5D2-0A13-42F8-9FF5-4537CAEBA1D7}</Project>
+      <Name>DVR</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ErrorLoggingLib\ErrorLoggingLib.csproj">
+      <Project>{930EBC8F-262C-40E8-A9FC-F1C4CEC27683}</Project>
+      <Name>ErrorLoggingLib</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\FrameGenerator\FrameGenerator.csproj">
+      <Project>{ECBFAB32-6732-46CC-B7BB-3E342F5BBF19}</Project>
+      <Name>FrameGenerator</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\LPREngine\LPREngine.csproj">
+      <Project>{B42479EA-CC66-4573-9544-D5CF5937F93A}</Project>
+      <Name>LPREngine</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\LPRInteractiveEditUC\LPRInteractiveEditUC.csproj">
+      <Project>{7E57DF58-AC61-4F50-A9AB-E8AAA9EA6C65}</Project>
+      <Name>LPRInteractiveEditUC</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\LPROCR_lib_c\LPROCR_lib_c.vcproj">
+      <Project>{9A346A83-917F-43C3-94FF-3F983A0182AD}</Project>
+      <Name>LPROCR_lib_c</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\LPROCR_Wrapper\LPROCR_Wrapper.csproj">
+      <Project>{79E419D7-E4EB-4B0A-A7FE-E4A85F60F6EF}</Project>
+      <Name>LPROCR_Wrapper</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\LPRService\LPRServiceCore.csproj">
+      <Project>{F9FAFFA3-01E2-4EF5-9815-82A945D286B0}</Project>
+      <Name>LPRServiceCore</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Paths\Paths.csproj">
+      <Project>{42DC7D30-3AD6-462B-A298-597C3D2095A3}</Project>
+      <Name>Paths</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Pixels\PixelLib.csproj">
+      <Project>{6093E595-A6E2-482F-8A35-8C168B9C198D}</Project>
+      <Name>PixelLib</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ScalablePictureBox\ScalablePictureBox.csproj">
+      <Project>{185A6E79-A824-4696-808B-5A2E315DEF3B}</Project>
+      <Name>ScalablePictureBox</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ScreenLogger\ScreenLogger.csproj">
+      <Project>{4BCFE3D9-8361-4DB5-8CD5-13AF5803BAED}</Project>
+      <Name>ScreenLogger</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\SendEmail\EmailServicesLib.csproj">
+      <Project>{3345A8C1-D886-4406-8C38-92DD096037AA}</Project>
+      <Name>EmailServicesLib</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\SmartSearchLib\SmartSearchLib.csproj">
+      <Project>{5EA07620-5E44-4D5C-B239-9F93B9E23987}</Project>
+      <Name>SmartSearchLib</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\UserSettingsLib\UserSettingsLib.csproj">
+      <Project>{F1298AA7-7CEA-4420-A495-EFDE0B92CAEF}</Project>
+      <Name>UserSettingsLib</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Utilities\Utilities.csproj">
+      <Project>{0D64B43A-14F2-4D5C-A204-932C949D5B80}</Project>
+      <Name>Utilities</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\WatchlistProcess\WatchlistProcess.csproj">
+      <Project>{60383A16-48E5-4EC7-AE19-5EF668178B7E}</Project>
+      <Name>WatchlistProcess</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

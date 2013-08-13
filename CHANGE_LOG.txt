@@ -1,0 +1,68 @@
+
+------------- 22 Oct 2009
+
+1. Added the ability to use c:\ on vista for the DVRSTORAGE directory. Since Vista does
+not allow the user to add files to the root of c:\, it is not required to add a file
+called firstevidencedrive.txt when using c:\.  Instead, drivemanager just looks
+for the folder DVRSTORAGE if the drive is c:. Otherwise, for other drives, the behavoir
+has not changed.
+
+2. in Plate Analysts workstation, when using batch mode processing of jpegs, if 
+no longer create a sub directory for each jpeg being stored to a user specified storage folder.
+
+3. in Plate Analysts workstation, when using batch mode processing of jpegs, the jpeg player
+in the FrameGenerator could send the jpegs faster than LPR could process, causing buffer overruns.
+So I put in a feedback mechenism to slow down the jpeg source when the LPRProcessQ hits the 1/2 mark.
+
+4. in Plate Analysts workstation, added feature to delete search result table rows, edit the row plate number,
+and export the table (with edited results).
+
+5. fixed a problem detected with time stamps on jpeg batch processing. Now using the time stamp from
+the source file rather than DateTime.Now.
+
+
+-------------- 9 November 2009
+
+6.  fixed analysts workstation export bug - frames were being dropped in the queue m_NewFramesToPushQ due
+to a Q limit of 60 frames. Increased to 240 frames. This queue receives frames from the directshow decode
+of a video file.  A seperate thread de-queues from this queue to push to the LPR and DVR processors. This queue
+is in the path of batch processing a recorded video files.
+
+
+
+
+-------------- 10 November 2009
+
+7. fix eventlog.txt bug that LATIN does not show up if from batch mode jpeg processing.
+
+
+---------------- 17 - 19 November 2009
+
+
+8. in LPR service control, hide passwords and license key activation - done
+
+9. in LPR service control, re-worked source channels configuration UI
+
+10.in LPR service control, re-worked tab pages generally
+
+11. added version number display on all apps
+
+12. all config/log files now in c:\FirstEvidence ,on log files, set prefix for service or not service, different log files
+
+13. Made improvments to UI of Search Tool and Batch processing in Plate Analysts Workstation.
+
+14. Batch processing in Plate Analysts Workstation, add time stamp to video files images based on file's initial creation time.
+
+15. Batch processing in Plate Analysts Workstation, supply a default camera name for all batch processed images
+
+16. Batch processing in Plate Analysts Workstation, if storing to user specified location do not store LPR data to event log
+
+17. Fixed bug of repeats of frames in the event log.
+
+18. cleaned up watch list UI
+
+19. Added watch item comment in email alert
+ 
+20. remove ^ in plate number, replace with comma. Do not show comma if only one number
+
+21. fixed GPS save directions bug - saves direction radio buttons whether or not user has changed the setting

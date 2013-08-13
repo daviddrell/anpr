@@ -1,0 +1,70 @@
+Assembly MFCM90U, Version=9.0.30729.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a: 
+	hash=SHA1, flags=PublicKey
+Assembly mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089: 
+	hash=SHA1, flags=None
+Assembly Microsoft.VisualC, Version=8.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a: 
+	hash=SHA1, flags=None
+Assembly System, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089: 
+	hash=SHA1, flags=None
+Assembly System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089: 
+	hash=SHA1, flags=None
+Assembly System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a: 
+	hash=SHA1, flags=None
+Assembly MFCMIFC80, Version=1.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a: 
+	hash=SHA1, flags=None
+Class Microsoft.VisualC.MFC.CWin32Window: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+    Void .ctor(HWND__*): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Interfaces:
+    System.Windows.Forms.IWin32Window
+  Properties:
+    IntPtr Handle 'get ' : 
+  Methods:
+    get_Handle(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+Class Microsoft.VisualC.MFC.CWinFormsEventsHelper: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Fields:
+    System.Windows.Forms.Control m_pControl : Public
+    Microsoft.VisualC.MFC.IHandleEvents* m_pSink : Public
+  Properties:
+    System.Windows.Forms.Control Control 'get set' : 
+  Methods:
+    get_Control(): PrivateScope, Public, HideBySig, SpecialName
+    set_Control(Control): PrivateScope, Public, HideBySig, SpecialName
+    Advise(IHandleEvents*): PrivateScope, Public, HideBySig
+    Unadvise(IHandleEvents*): PrivateScope, Public, HideBySig
+Class Microsoft.VisualC.MFC.CCommandSource: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Interfaces:
+    Microsoft.VisualC.MFC.ICommandSource
+  Methods:
+    AddCommandHandler(UInt32, CommandHandler): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    AddCommandRangeHandler(UInt32, UInt32, CommandHandler): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    RemoveCommandHandler(UInt32): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    RemoveCommandRangeHandler(UInt32, UInt32): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    FindCommandHandler(UInt32): PrivateScope, Public, HideBySig
+    AddCommandUIHandler(UInt32, CommandUIHandler): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    AddCommandRangeUIHandler(UInt32, UInt32, CommandUIHandler): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    RemoveCommandUIHandler(UInt32): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    RemoveCommandRangeUIHandler(UInt32, UInt32): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    FindCommandUIHandler(UInt32): PrivateScope, Public, HideBySig
+    PostCommand(UInt32): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    SendCommand(UInt32): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+Class Microsoft.VisualC.MFC.CCommandUI: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+    Void .ctor(CCmdUI*): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Interfaces:
+    Microsoft.VisualC.MFC.ICommandUI
+  Properties:
+    UInt32 Index 'get ' : 
+    UInt32 ID  'get ' : 
+    System.String Text 'set' : 
+    Boolean Radio 'set' : 
+    Microsoft.VisualC.MFC.UICheckState Check 'set' : 
+    Boolean Enabled 'set' : 
+  Methods:
+    ContinueRouting(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    set_Enabled(Boolean(HasFieldMarshal)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    set_Check(UICheckState): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    set_Radio(Boolean(HasFieldMarshal)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    set_Text(String): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    get_ID(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    get_Index(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName

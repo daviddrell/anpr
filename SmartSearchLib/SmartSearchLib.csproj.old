@@ -1,0 +1,171 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="3.5" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{5EA07620-5E44-4D5C-B239-9F93B9E23987}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>SmartSearchLib</RootNamespace>
+    <AssemblyName>SmartSearchLib</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ConfigureStorage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ConfigureStorage.Designer.cs">
+      <DependentUpon>ConfigureStorage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ExportStatus.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ExportStatus.Designer.cs">
+      <DependentUpon>ExportStatus.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="search.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="search.Designer.cs">
+      <DependentUpon>search.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SearchLib.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SearchStatusDisplayUC.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="SearchStatusDisplayUC.Designer.cs">
+      <DependentUpon>SearchStatusDisplayUC.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WebPlotLocation.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="WebPlotLocation.Designer.cs">
+      <DependentUpon>WebPlotLocation.cs</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="ConfigureStorage.resx">
+      <DependentUpon>ConfigureStorage.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ExportStatus.resx">
+      <DependentUpon>ExportStatus.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="search.resx">
+      <DependentUpon>search.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\searchbackground.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\littlegreenflag.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <None Include="Resources\littleredflag.bmp" />
+    <EmbeddedResource Include="SearchStatusDisplayUC.resx">
+      <DependentUpon>SearchStatusDisplayUC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WebPlotLocation.resx">
+      <DependentUpon>WebPlotLocation.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\nullimage.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\ApplicationData\ApplicationData.csproj">
+      <Project>{3A8B6996-00B5-4519-B0FF-8B0248B8C66C}</Project>
+      <Name>ApplicationData</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ErrorLoggingLib\ErrorLoggingLib.csproj">
+      <Project>{930EBC8F-262C-40E8-A9FC-F1C4CEC27683}</Project>
+      <Name>ErrorLoggingLib</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\EventLogFiles\EventLogFiles.csproj">
+      <Project>{AE8AB989-B370-4AD1-934D-2E502E51B8A2}</Project>
+      <Name>EventLogFiles</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\LPROCR_Wrapper\LPROCR_Wrapper.csproj">
+      <Project>{79E419D7-E4EB-4B0A-A7FE-E4A85F60F6EF}</Project>
+      <Name>LPROCR_Wrapper</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Paths\Paths.csproj">
+      <Project>{42DC7D30-3AD6-462B-A298-597C3D2095A3}</Project>
+      <Name>Paths</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ScalablePictureBox\ScalablePictureBox.csproj">
+      <Project>{185A6E79-A824-4696-808B-5A2E315DEF3B}</Project>
+      <Name>ScalablePictureBox</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\UserSettingsLib\UserSettingsLib.csproj">
+      <Project>{F1298AA7-7CEA-4420-A495-EFDE0B92CAEF}</Project>
+      <Name>UserSettingsLib</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\VideoPlayerForm\VideoPlayerForm.csproj">
+      <Project>{2C9444FA-F06C-40E6-B4BB-B3775D477C1D}</Project>
+      <Name>VideoPlayerForm</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet type='text/xsl' href='_UpgradeReport_Files/UpgradeReport.xslt'?><UpgradeLog>
+<Properties><Property Name="Solution" Value="Test2255InterfaceCS">
+</Property><Property Name="Solution File" Value="D:\david\projects\LPR_V3.0.4\Test2255InterfaceCS.sln">
+</Property><Property Name="User Options File" Value="D:\david\projects\LPR_V3.0.4\Test2255InterfaceCS.suo">
+</Property><Property Name="Date" Value="Wednesday, August 07, 2013">
+</Property><Property Name="Time" Value="8:52 AM">
+</Property></Properties><Event ErrorLevel="0" Project="" Source="Test2255InterfaceCS.sln" Description="File successfully backed up as D:\david\projects\LPR_V3.0.4\Test2255InterfaceCS.sln.old">
+</Event><Event ErrorLevel="0" Project="" Source="Test2255InterfaceCS.suo" Description="File successfully backed up as D:\david\projects\LPR_V3.0.4\Test2255InterfaceCS.suo.old">
+</Event><Event ErrorLevel="0" Project="Test2255InterfaceCS" Source="Test2255InterfaceCS\Test2255InterfaceCS.csproj" Description="Project file successfully backed up as D:\david\projects\LPR_V3.0.4\Test2255InterfaceCS\Test2255InterfaceCS.csproj.old">
+</Event><Event ErrorLevel="0" Project="Test2255InterfaceCS" Source="Test2255InterfaceCS\Test2255InterfaceCS.csproj" Description="Project converted successfully">
+</Event><Event ErrorLevel="3" Project="Test2255InterfaceCS" Source="Test2255InterfaceCS\Test2255InterfaceCS.csproj" Description="Converted">
+</Event><Event ErrorLevel="0" Project="S2255Controller" Source="S2255Controller\S2255Controller.csproj" Description="Project file successfully backed up as D:\david\projects\LPR_V3.0.4\S2255Controller\S2255Controller.csproj.old">
+</Event><Event ErrorLevel="0" Project="S2255Controller" Source="S2255Controller\S2255Controller.csproj.user" Description="Project user file successfully backed up as D:\david\projects\LPR_V3.0.4\S2255Controller\S2255Controller.csproj.user.old">
+</Event><Event ErrorLevel="0" Project="S2255Controller" Source="S2255Controller\S2255Controller.csproj" Description="Project converted successfully">
+</Event><Event ErrorLevel="3" Project="S2255Controller" Source="S2255Controller\S2255Controller.csproj" Description="Converted">
+</Event><Event ErrorLevel="0" Project="LPROCR_lib_c" Source="LPROCR_lib_c\LPROCR_lib_c.vcproj" Description="Converting project file 'D:\david\projects\LPR_V3.0.4\LPROCR_lib_c\LPROCR_lib_c.vcproj'.">
+</Event><Event ErrorLevel="1" Project="LPROCR_lib_c" Source="LPROCR_lib_c\LPROCR_lib_c.vcproj" Description="VCWebServiceProxyGeneratorTool is no longer supported. The tool has been removed from your project settings.">
+</Event><Event ErrorLevel="1" Project="LPROCR_lib_c" Source="LPROCR_lib_c\LPROCR_lib_c.vcproj" Description="MSB8012: $(TargetPath) ('D:\david\projects\LPR_V3.0.4\Debug\LPROCR_lib_c.dll') does not match the Linker's OutputFile property value '..\Debug\LPROCR_lib_c.dll' ('D:\david\projects\Debug\LPROCR_lib_c.dll') in project configuration 'Debug|Win32'. This may cause your project to build incorrectly. To correct this, please make sure that $(TargetPath) property value matches the value specified in %(Link.OutputFile).">
+</Event><Event ErrorLevel="1" Project="LPROCR_lib_c" Source="LPROCR_lib_c\LPROCR_lib_c.vcproj" Description="MSB8012: $(TargetPath) ('D:\david\projects\LPR_V3.0.4\LPROCR_lib_c\Release\LPROCR_lib_c.dll') does not match the Linker's OutputFile property value 'Release\LPROCR_lib_c.dll' ('D:\david\projects\LPR_V3.0.4\Release\LPROCR_lib_c.dll') in project configuration 'Release|Win32'. This may cause your project to build incorrectly. To correct this, please make sure that $(TargetPath) property value matches the value specified in %(Link.OutputFile).">
+</Event><Event ErrorLevel="0" Project="LPROCR_lib_c" Source="LPROCR_lib_c\LPROCR_lib_c.vcproj" Description="Done converting to new project file 'D:\david\projects\LPR_V3.0.4\LPROCR_lib_c\LPROCR_lib_c.vcxproj'.">
+</Event><Event ErrorLevel="3" Project="LPROCR_lib_c" Source="LPROCR_lib_c\LPROCR_lib_c.vcproj" Description="Converted">
+</Event><Event ErrorLevel="0" Project="LPROCR_Wrapper" Source="LPROCR_Wrapper\LPROCR_Wrapper.csproj" Description="Project file successfully backed up as D:\david\projects\LPR_V3.0.4\LPROCR_Wrapper\LPROCR_Wrapper.csproj.old">
+</Event><Event ErrorLevel="0" Project="LPROCR_Wrapper" Source="LPROCR_Wrapper\LPROCR_Wrapper.csproj" Description="Project converted successfully">
+</Event><Event ErrorLevel="3" Project="LPROCR_Wrapper" Source="LPROCR_Wrapper\LPROCR_Wrapper.csproj" Description="Converted">
+</Event><Event ErrorLevel="0" Project="LPRServiceCore" Source="LPRService\LPRServiceCore.csproj" Description="Project file successfully backed up as D:\david\projects\LPR_V3.0.4\LPRService\LPRServiceCore.csproj.old">
+</Event><Event ErrorLevel="0" Project="LPRServiceCore" Source="LPRService\LPRServiceCore.csproj" Description="Project converted successfully">
+</Event><Event ErrorLevel="3" Project="LPRServiceCore" Source="LPRService\LPRServiceCore.csproj" Description="Converted">
+</Event><Event ErrorLevel="0" Project="RCS_Protocol" Source="RCS_Protocol\RCS_Protocol.csproj" Description="Project file successfully backed up as D:\david\projects\LPR_V3.0.4\RCS_Protocol\RCS_Protocol.csproj.old">
+</Event><Event ErrorLevel="0" Project="RCS_Protocol" Source="RCS_Protocol\RCS_Protocol.csproj" Description="Project converted successfully">
+</Event><Event ErrorLevel="3" Project="RCS_Protocol" Source="RCS_Protocol\RCS_Protocol.csproj" Description="Converted">
+</Event><Event ErrorLevel="0" Project="RemoteConnectionServer" Source="RemoteConnectionServer\RemoteConnectionServer.csproj" Description="Project file successfully backed up as D:\david\projects\LPR_V3.0.4\RemoteConnectionServer\RemoteConnectionServer.csproj.old">
+</Event><Event ErrorLevel="0" Project="RemoteConnectionServer" Source="RemoteConnectionServer\RemoteConnectionServer.csproj" Description="Project converted successfully">
+</Event><Event ErrorLevel="3" Project="RemoteConnectionServer" Source="RemoteConnectionServer\RemoteConnectionServer.csproj" Description="Converted">
+</Event><Event ErrorLevel="0" Project="RemoteClient" Source="RemoteClient\RemoteClient.csproj" Description="Project file successfully backed up as D:\david\projects\LPR_V3.0.4\RemoteClient\RemoteClient.csproj.old">
+</Event><Event ErrorLevel="0" Project="RemoteClient" Source="RemoteClient\RemoteClient.csproj" Description="Project converted successfully">
+</Event><Event ErrorLevel="3" Project="RemoteClient" Source="RemoteClient\RemoteClient.csproj" Description="Converted">
+</Event><Event ErrorLevel="0" Project="RCSClient" Source="RCSClient\RCSClient.csproj" Description="Project file successfully backed up as D:\david\projects\LPR_V3.0.4\RCSClient\RCSClient.csproj.old">
+</Event><Event ErrorLevel="0" Project="RCSClient" Source="RCSClient\RCSClient.csproj" Description="Project converted successfully">
+</Event><Event ErrorLevel="3" Project="RCSClient" Source="RCSClient\RCSClient.csproj" Description="Converted">
+</Event><Event ErrorLevel="0" Project="ApplicationData" Source="ApplicationData\ApplicationData.csproj" Description="Project file successfully backed up as D:\david\projects\LPR_V3.0.4\ApplicationData\ApplicationData.csproj.old">
+</Event><Event ErrorLevel="0" Project="ApplicationData" Source="ApplicationData\ApplicationData.csproj" Description="Project converted successfully">
+</Event><Event ErrorLevel="3" Project="ApplicationData" Source="ApplicationData\ApplicationData.csproj" Description="Converted">
+</Event><Event ErrorLevel="0" Project="Logging" Source="Logging\Logging.csproj" Description="Project file successfully backed up as D:\david\projects\LPR_V3.0.4\Logging\Logging.csproj.old">
+</Event><Event ErrorLevel="0" Project="Logging" Source="Logging\Logging.csproj" Description="Project converted successfully">
+</Event><Event ErrorLevel="3" Project="Logging" Source="Logging\Logging.csproj" Description="Converted">
+</Event><Event ErrorLevel="0" Project="GPSLib" Source="GPSLib\GPSLib.csproj" Description="Project file successfully backed up as D:\david\projects\LPR_V3.0.4\GPSLib\GPSLib.csproj.old">
+</Event><Event ErrorLevel="0" Project="GPSLib" Source="GPSLib\GPSLib.csproj" Description="Project converted successfully">
+</Event><Event ErrorLevel="3" Project="GPSLib" Source="GPSLib\GPSLib.csproj" Description="Converted">
+</Event><Event ErrorLevel="0" Project="ErrorLoggingLib" Source="ErrorLoggingLib\ErrorLoggingLib.csproj" Description="Project file successfully backed up as D:\david\projects\LPR_V3.0.4\ErrorLoggingLib\ErrorLoggingLib.csproj.old">
+</Event><Event ErrorLevel="0" Project="ErrorLoggingLib" Source="ErrorLoggingLib\ErrorLoggingLib.csproj" Description="Project converted successfully">
+</Event><Event ErrorLevel="3" Project="ErrorLoggingLib" Source="ErrorLoggingLib\ErrorLoggingLib.csproj" Description="Converted">
+</Event><Event ErrorLevel="0" Project="EmailServicesLib" Source="SendEmail\EmailServicesLib.csproj" Description="Project file successfully backed up as D:\david\projects\LPR_V3.0.4\SendEmail\EmailServicesLib.csproj.old">
+</Event><Event ErrorLevel="0" Project="EmailServicesLib" Source="SendEmail\EmailServicesLib.csproj" Description="Project converted successfully">
+</Event><Event ErrorLevel="3" Project="EmailServicesLib" Source="SendEmail\EmailServicesLib.csproj" Description="Converted">
+</Event><Event ErrorLevel="0" Project="UserSettingsLib" Source="UserSettingsLib\UserSettingsLib.csproj" Description="Project file successfully backed up as D:\david\projects\LPR_V3.0.4\UserSettingsLib\UserSettingsLib.csproj.old">
+</Event><Event ErrorLevel="0" Project="UserSettingsLib" Source="UserSettingsLib\UserSettingsLib.csproj" Description="Project converted successfully">
+</Event><Event ErrorLevel="3" Project="UserSettingsLib" Source="UserSettingsLib\UserSettingsLib.csproj" Description="Converted">
+</Event><Event ErrorLevel="0" Project="Encryption" Source="Encryption\Encryption.csproj" Description="Project file successfully backed up as D:\david\projects\LPR_V3.0.4\Encryption\Encryption.csproj.old">
+</Event><Event ErrorLevel="0" Project="Encryption" Source="Encryption\Encryption.csproj" Description="Project converted successfully">
+</Event><Event ErrorLevel="3" Project="Encryption" Source="Encryption\Encryption.csproj" Description="Converted">
+</Event><Event ErrorLevel="0" Project="FrameGenerator" Source="FrameGenerator\FrameGenerator.csproj" Description="Project file successfully backed up as D:\david\projects\LPR_V3.0.4\FrameGenerator\FrameGenerator.csproj.old">
+</Event><Event ErrorLevel="0" Project="FrameGenerator" Source="FrameGenerator\FrameGenerator.csproj" Description="Project converted successfully">
+</Event><Event ErrorLevel="3" Project="FrameGenerator" Source="FrameGenerator\FrameGenerator.csproj" Description="Converted">
+</Event><Event ErrorLevel="0" Project="S2255Interface" Source="S2255Interface\S2255Interface.vcproj" Description="Converting project file 'D:\david\projects\LPR_V3.0.4\S2255Interface\S2255Interface.vcproj'.">
+</Event><Event ErrorLevel="1" Project="S2255Interface" Source="S2255Interface\S2255Interface.vcproj" Description="VCWebServiceProxyGeneratorTool is no longer supported. The tool has been removed from your project settings.">
+</Event><Event ErrorLevel="1" Project="S2255Interface" Source="S2255Interface\S2255Interface.vcproj" Description="Attribute 'CopyLocalDependencies' of 'AssemblyReference' is not supported in this version and has been removed during conversion.">
+</Event><Event ErrorLevel="1" Project="S2255Interface" Source="S2255Interface\S2255Interface.vcproj" Description="Attribute 'UseDependenciesInBuild' of 'AssemblyReference' is not supported in this version and has been removed during conversion.">
+</Event><Event ErrorLevel="1" Project="S2255Interface" Source="S2255Interface\S2255Interface.vcproj" Description="MSB8012: $(TargetPath) ('D:\david\projects\LPR_V3.0.4\S2255Interface\Debug\S2255Interface.dll') does not match the Linker's OutputFile property value '..\debug\S2255Interface.dll' ('D:\david\projects\debug\S2255Interface.dll') in project configuration 'Debug|Win32'. This may cause your project to build incorrectly. To correct this, please make sure that $(TargetPath) property value matches the value specified in %(Link.OutputFile).">
+</Event><Event ErrorLevel="1" Project="S2255Interface" Source="S2255Interface\S2255Interface.vcproj" Description="MSB8012: $(TargetPath) ('D:\david\projects\LPR_V3.0.4\S2255Interface\..\Release\S2255Interface.dll') does not match the Linker's OutputFile property value '..\Release\S2255Interface.dll' ('D:\david\projects\Release\S2255Interface.dll') in project configuration 'Release|Win32'. This may cause your project to build incorrectly. To correct this, please make sure that $(TargetPath) property value matches the value specified in %(Link.OutputFile).">
+</Event><Event ErrorLevel="0" Project="S2255Interface" Source="S2255Interface\S2255Interface.vcproj" Description="Done converting to new project file 'D:\david\projects\LPR_V3.0.4\S2255Interface\S2255Interface.vcxproj'.">
+</Event><Event ErrorLevel="3" Project="S2255Interface" Source="S2255Interface\S2255Interface.vcproj" Description="Converted">
+</Event><Event ErrorLevel="0" Project="ScreenLogger" Source="ScreenLogger\ScreenLogger.csproj" Description="Project file successfully backed up as D:\david\projects\LPR_V3.0.4\ScreenLogger\ScreenLogger.csproj.old">
+</Event><Event ErrorLevel="0" Project="ScreenLogger" Source="ScreenLogger\ScreenLogger.csproj" Description="Project converted successfully">
+</Event><Event ErrorLevel="3" Project="ScreenLogger" Source="ScreenLogger\ScreenLogger.csproj" Description="Converted">
+</Event><Event ErrorLevel="0" Project="LPR Monitor" Source="Control Center 2\LPR Monitor.csproj" Description="Project file successfully backed up as D:\david\projects\LPR_V3.0.4\Control Center 2\LPR Monitor.csproj.old">
+</Event><Event ErrorLevel="0" Project="LPR Monitor" Source="Control Center 2\LPR Monitor.csproj" Description="Project converted successfully">
+</Event><Event ErrorLevel="3" Project="LPR Monitor" Source="Control Center 2\LPR Monitor.csproj" Description="Converted">
+</Event><Event ErrorLevel="0" Project="RemoteHostsLib" Source="RemoteHostsLib\RemoteHostsLib.csproj" Description="Project file successfully backed up as D:\david\projects\LPR_V3.0.4\RemoteHostsLib\RemoteHostsLib.csproj.old">
+</Event><Event ErrorLevel="0" Project="RemoteHostsLib" Source="RemoteHostsLib\RemoteHostsLib.csproj" Description="Project converted successfully">
+</Event><Event ErrorLevel="3" Project="RemoteHostsLib" Source="RemoteHostsLib\RemoteHostsLib.csproj" Description="Converted">
+</Event><Event ErrorLevel="0" Project="Utilities" Source="Utilities\Utilities.csproj" Description="Project file successfully backed up as D:\david\projects\LPR_V3.0.4\Utilities\Utilities.csproj.old">
+</Event><Event ErrorLevel="0" Project="Utilities" Source="Utilities\Utilities.csproj" Description="Project converted successfully">
+</Event><Event ErrorLevel="3" Project="Utilities" Source="Utilities\Utilities.csproj" Description="Converted">
+</Event><Event ErrorLevel="0" Project="DVR" Source="DVR\DVR.csproj" Description="Project file successfully backed up as D:\david\projects\LPR_V3.0.4\DVR\DVR.csproj.old">
+</Event><Event ErrorLevel="0" Project="DVR" Source="DVR\DVR.csproj" Description="Project converted successfully">
+</Event><Event ErrorLevel="3" Project="DVR" Source="DVR\DVR.csproj" Description="Converted">
+</Event><Event ErrorLevel="0" Project="Paths" Source="Paths\Paths.csproj" Description="Project file successfully backed up as D:\david\projects\LPR_V3.0.4\Paths\Paths.csproj.old">
+</Event><Event ErrorLevel="0" Project="Paths" Source="Paths\Paths.csproj" Description="Project converted successfully">
+</Event><Event ErrorLevel="3" Project="Paths" Source="Paths\Paths.csproj" Description="Converted">
+</Event><Event ErrorLevel="0" Project="LPREngine" Source="LPREngine\LPREngine.csproj" Description="Project file successfully backed up as D:\david\projects\LPR_V3.0.4\LPREngine\LPREngine.csproj.old">
+</Event><Event ErrorLevel="0" Project="LPREngine" Source="LPREngine\LPREngine.csproj" Description="Project converted successfully">
+</Event><Event ErrorLevel="3" Project="LPREngine" Source="LPREngine\LPREngine.csproj" Description="Converted">
+</Event><Event ErrorLevel="0" Project="PlateAnalystsWorkstation" Source="AnalystsWorkstation\PlateAnalystsWorkstation.csproj" Description="Project file successfully backed up as D:\david\projects\LPR_V3.0.4\AnalystsWorkstation\PlateAnalystsWorkstation.csproj.old">
+</Event><Event ErrorLevel="0" Project="PlateAnalystsWorkstation" Source="AnalystsWorkstation\PlateAnalystsWorkstation.csproj" Description="Project converted successfully">
+</Event><Event ErrorLevel="3" Project="PlateAnalystsWorkstation" Source="AnalystsWorkstation\PlateAnalystsWorkstation.csproj" Description="Converted">
+</Event><Event ErrorLevel="0" Project="SmartSearchLib" Source="SmartSearchLib\SmartSearchLib.csproj" Description="Project file successfully backed up as D:\david\projects\LPR_V3.0.4\SmartSearchLib\SmartSearchLib.csproj.old">
+</Event><Event ErrorLevel="0" Project="SmartSearchLib" Source="SmartSearchLib\SmartSearchLib.csproj" Description="Project converted successfully">
+</Event><Event ErrorLevel="3" Project="SmartSearchLib" Source="SmartSearchLib\SmartSearchLib.csproj" Description="Converted">
+</Event><Event ErrorLevel="0" Project="EventLogFiles" Source="EventLogFiles\EventLogFiles.csproj" Description="Project file successfully backed up as D:\david\projects\LPR_V3.0.4\EventLogFiles\EventLogFiles.csproj.old">
+</Event><Event ErrorLevel="0" Project="EventLogFiles" Source="EventLogFiles\EventLogFiles.csproj" Description="Project converted successfully">
+</Event><Event ErrorLevel="3" Project="EventLogFiles" Source="EventLogFiles\EventLogFiles.csproj" Description="Converted">
+</Event><Event ErrorLevel="0" Project="ScalablePictureBox" Source="ScalablePictureBox\ScalablePictureBox.csproj" Description="Project file successfully backed up as D:\david\projects\LPR_V3.0.4\ScalablePictureBox\ScalablePictureBox.csproj.old">
+</Event><Event ErrorLevel="1" Project="ScalablePictureBox" Source="ScalablePictureBox\ScalablePictureBox.csproj" Description="Your project is targeting .NET Framework 2.0 or 3.0. If your project uses assemblies requiring a newer .NET Framework, your project will fail to build. You can change the .NET Framework version by clicking Properties on the project menu and then selecting a new version in the '.NET Framework' dropdown box. (In Visual Basic, this is located on the Compile tab by clicking the 'Advanced Compiler Options...' button.)">
+</Event><Event ErrorLevel="0" Project="ScalablePictureBox" Source="ScalablePictureBox\ScalablePictureBox.csproj" Description="Project converted successfully">
+</Event><Event ErrorLevel="3" Project="ScalablePictureBox" Source="ScalablePictureBox\ScalablePictureBox.csproj" Description="Converted">
+</Event><Event ErrorLevel="0" Project="VideoPlayerUC" Source="VideoPlayerUC\VideoPlayerUC.csproj" Description="Project file successfully backed up as D:\david\projects\LPR_V3.0.4\VideoPlayerUC\VideoPlayerUC.csproj.old">
+</Event><Event ErrorLevel="0" Project="VideoPlayerUC" Source="VideoPlayerUC\VideoPlayerUC.csproj" Description="Project converted successfully">
+</Event><Event ErrorLevel="3" Project="VideoPlayerUC" Source="VideoPlayerUC\VideoPlayerUC.csproj" Description="Converted">
+</Event><Event ErrorLevel="0" Project="VideoPlayerForm" Source="VideoPlayerForm\VideoPlayerForm.csproj" Description="Project file successfully backed up as D:\david\projects\LPR_V3.0.4\VideoPlayerForm\VideoPlayerForm.csproj.old">
+</Event><Event ErrorLevel="0" Project="VideoPlayerForm" Source="VideoPlayerForm\VideoPlayerForm.csproj" Description="Project converted successfully">
+</Event><Event ErrorLevel="3" Project="VideoPlayerForm" Source="VideoPlayerForm\VideoPlayerForm.csproj" Description="Converted">
+</Event><Event ErrorLevel="0" Project="WatchlistProcess" Source="WatchlistProcess\WatchlistProcess.csproj" Description="Project file successfully backed up as D:\david\projects\LPR_V3.0.4\WatchlistProcess\WatchlistProcess.csproj.old">
+</Event><Event ErrorLevel="0" Project="WatchlistProcess" Source="WatchlistProcess\WatchlistProcess.csproj" Description="Project converted successfully">
+</Event><Event ErrorLevel="3" Project="WatchlistProcess" Source="WatchlistProcess\WatchlistProcess.csproj" Description="Converted">
+</Event><Event ErrorLevel="0" Project="LPR Service Control" Source="ConfigurePSS\LPR Service Control.csproj" Description="Project file successfully backed up as D:\david\projects\LPR_V3.0.4\ConfigurePSS\LPR Service Control.csproj.old">
+</Event><Event ErrorLevel="0" Project="LPR Service Control" Source="ConfigurePSS\LPR Service Control.csproj" Description="Project converted successfully">
+</Event><Event ErrorLevel="3" Project="LPR Service Control" Source="ConfigurePSS\LPR Service Control.csproj" Description="Converted">
+</Event><Event ErrorLevel="0" Project="ConfigWatchListsUC" Source="ConfigWatchListsUC\ConfigWatchListsUC.csproj" Description="Project file successfully backed up as D:\david\projects\LPR_V3.0.4\ConfigWatchListsUC\ConfigWatchListsUC.csproj.old">
+</Event><Event ErrorLevel="0" Project="ConfigWatchListsUC" Source="ConfigWatchListsUC\ConfigWatchListsUC.csproj" Description="Project converted successfully">
+</Event><Event ErrorLevel="3" Project="ConfigWatchListsUC" Source="ConfigWatchListsUC\ConfigWatchListsUC.csproj" Description="Converted">
+</Event><Event ErrorLevel="0" Project="ConfigureEmailUC" Source="ConfigureEmailUC\ConfigureEmailUC.csproj" Description="Project file successfully backed up as D:\david\projects\LPR_V3.0.4\ConfigureEmailUC\ConfigureEmailUC.csproj.old">
+</Event><Event ErrorLevel="0" Project="ConfigureEmailUC" Source="ConfigureEmailUC\ConfigureEmailUC.csproj" Description="Project converted successfully">
+</Event><Event ErrorLevel="3" Project="ConfigureEmailUC" Source="ConfigureEmailUC\ConfigureEmailUC.csproj" Description="Converted">
+</Event><Event ErrorLevel="0" Project="ConfigureGPS_UC" Source="ConfigureGPS_UC\ConfigureGPS_UC.csproj" Description="Project file successfully backed up as D:\david\projects\LPR_V3.0.4\ConfigureGPS_UC\ConfigureGPS_UC.csproj.old">
+</Event><Event ErrorLevel="0" Project="ConfigureGPS_UC" Source="ConfigureGPS_UC\ConfigureGPS_UC.csproj" Description="Project converted successfully">
+</Event><Event ErrorLevel="3" Project="ConfigureGPS_UC" Source="ConfigureGPS_UC\ConfigureGPS_UC.csproj" Description="Converted">
+</Event><Event ErrorLevel="0" Project="ConfigureSourceChannels" Source="ConfigureSourceChannels\ConfigureSourceChannels.csproj" Description="Project file successfully backed up as D:\david\projects\LPR_V3.0.4\ConfigureSourceChannels\ConfigureSourceChannels.csproj.old">
+</Event><Event ErrorLevel="0" Project="ConfigureSourceChannels" Source="ConfigureSourceChannels\ConfigureSourceChannels.csproj" Description="Project converted successfully">
+</Event><Event ErrorLevel="3" Project="ConfigureSourceChannels" Source="ConfigureSourceChannels\ConfigureSourceChannels.csproj" Description="Converted">
+</Event><Event ErrorLevel="0" Project="LPRServiceContainer" Source="LPRServiceContainer\LPRServiceContainer.csproj" Description="Project file successfully backed up as D:\david\projects\LPR_V3.0.4\LPRServiceContainer\LPRServiceContainer.csproj.old">
+</Event><Event ErrorLevel="0" Project="LPRServiceContainer" Source="LPRServiceContainer\LPRServiceContainer.csproj" Description="Project converted successfully">
+</Event><Event ErrorLevel="3" Project="LPRServiceContainer" Source="LPRServiceContainer\LPRServiceContainer.csproj" Description="Converted">
+</Event><Event ErrorLevel="0" Project="GenerateVeryLongWatchList" Source="GenerateVeryLongWatchList\GenerateVeryLongWatchList.csproj" Description="Project file successfully backed up as D:\david\projects\LPR_V3.0.4\GenerateVeryLongWatchList\GenerateVeryLongWatchList.csproj.old">
+</Event><Event ErrorLevel="0" Project="GenerateVeryLongWatchList" Source="GenerateVeryLongWatchList\GenerateVeryLongWatchList.csproj" Description="Project converted successfully">
+</Event><Event ErrorLevel="3" Project="GenerateVeryLongWatchList" Source="GenerateVeryLongWatchList\GenerateVeryLongWatchList.csproj" Description="Converted">
+</Event><Event ErrorLevel="0" Project="HotSwapForm" Source="HotSwapForm\HotSwapForm.csproj" Description="Project file successfully backed up as D:\david\projects\LPR_V3.0.4\HotSwapForm\HotSwapForm.csproj.old">
+</Event><Event ErrorLevel="0" Project="HotSwapForm" Source="HotSwapForm\HotSwapForm.csproj" Description="Project converted successfully">
+</Event><Event ErrorLevel="3" Project="HotSwapForm" Source="HotSwapForm\HotSwapForm.csproj" Description="Converted">
+</Event><Event ErrorLevel="0" Project="LPRInteractiveEditUC" Source="LPRInteractiveEditUC\LPRInteractiveEditUC.csproj" Description="Project file successfully backed up as D:\david\projects\LPR_V3.0.4\LPRInteractiveEditUC\LPRInteractiveEditUC.csproj.old">
+</Event><Event ErrorLevel="0" Project="LPRInteractiveEditUC" Source="LPRInteractiveEditUC\LPRInteractiveEditUC.csproj" Description="Project converted successfully">
+</Event><Event ErrorLevel="3" Project="LPRInteractiveEditUC" Source="LPRInteractiveEditUC\LPRInteractiveEditUC.csproj" Description="Converted">
+</Event><Event ErrorLevel="0" Project="LPR GoNoGoStatus" Source="LPR GoNoGoStatus\LPR GoNoGoStatus.csproj" Description="Project file successfully backed up as D:\david\projects\LPR_V3.0.4\LPR GoNoGoStatus\LPR GoNoGoStatus.csproj.old">
+</Event><Event ErrorLevel="0" Project="LPR GoNoGoStatus" Source="LPR GoNoGoStatus\LPR GoNoGoStatus.csproj" Description="Project converted successfully">
+</Event><Event ErrorLevel="3" Project="LPR GoNoGoStatus" Source="LPR GoNoGoStatus\LPR GoNoGoStatus.csproj" Description="Converted">
+</Event><Event ErrorLevel="0" Project="PixelLib" Source="Pixels\PixelLib.csproj" Description="Project file successfully backed up as D:\david\projects\LPR_V3.0.4\Pixels\PixelLib.csproj.old">
+</Event><Event ErrorLevel="0" Project="PixelLib" Source="Pixels\PixelLib.csproj" Description="Project converted successfully">
+</Event><Event ErrorLevel="3" Project="PixelLib" Source="Pixels\PixelLib.csproj" Description="Converted">
+</Event><Event ErrorLevel="0" Project="LicenseActivationUC" Source="LicenseActivation\LicenseActivationUC.csproj" Description="Project file successfully backed up as D:\david\projects\LPR_V3.0.4\LicenseActivation\LicenseActivationUC.csproj.old">
+</Event><Event ErrorLevel="0" Project="LicenseActivationUC" Source="LicenseActivation\LicenseActivationUC.csproj" Description="Project converted successfully">
+</Event><Event ErrorLevel="3" Project="LicenseActivationUC" Source="LicenseActivation\LicenseActivationUC.csproj" Description="Converted">
+</Event><Event ErrorLevel="0" Project="KeyFileGenerator" Source="KeyFileGenerator\KeyFileGenerator.csproj" Description="Project file successfully backed up as D:\david\projects\LPR_V3.0.4\KeyFileGenerator\KeyFileGenerator.csproj.old">
+</Event><Event ErrorLevel="0" Project="KeyFileGenerator" Source="KeyFileGenerator\KeyFileGenerator.csproj" Description="Project converted successfully">
+</Event><Event ErrorLevel="3" Project="KeyFileGenerator" Source="KeyFileGenerator\KeyFileGenerator.csproj" Description="Converted">
+</Event><Event ErrorLevel="0" Project="LicenseKeyObject" Source="LicenseKeyObject\LicenseKeyObject.csproj" Description="Project file successfully backed up as D:\david\projects\LPR_V3.0.4\LicenseKeyObject\LicenseKeyObject.csproj.old">
+</Event><Event ErrorLevel="0" Project="LicenseKeyObject" Source="LicenseKeyObject\LicenseKeyObject.csproj" Description="Project converted successfully">
+</Event><Event ErrorLevel="3" Project="LicenseKeyObject" Source="LicenseKeyObject\LicenseKeyObject.csproj" Description="Converted">
+</Event><Event ErrorLevel="0" Project="" Source="Test2255InterfaceCS.sln" Description="Solution converted successfully">
+</Event><Event ErrorLevel="3" Project="" Source="Test2255InterfaceCS.sln" Description="Converted">
+</Event><Event ErrorLevel="0" Project="S2255Controller" Source="S2255Controller\S2255Controller.csproj" Description="Scan complete: Upgrade not required for project files.">
+</Event><Event ErrorLevel="0" Project="LPROCR_Wrapper" Source="LPROCR_Wrapper\LPROCR_Wrapper.csproj" Description="Scan complete: Upgrade not required for project files.">
+</Event><Event ErrorLevel="0" Project="LPRServiceCore" Source="LPRService\LPRServiceCore.csproj" Description="Scan complete: Upgrade not required for project files.">
+</Event><Event ErrorLevel="0" Project="RCS_Protocol" Source="RCS_Protocol\RCS_Protocol.csproj" Description="Scan complete: Upgrade not required for project files.">
+</Event><Event ErrorLevel="0" Project="RemoteConnectionServer" Source="RemoteConnectionServer\RemoteConnectionServer.csproj" Description="Scan complete: Upgrade not required for project files.">
+</Event><Event ErrorLevel="0" Project="RemoteClient" Source="RemoteClient\RemoteClient.csproj" Description="Scan complete: Upgrade not required for project files.">
+</Event><Event ErrorLevel="0" Project="RCSClient" Source="RCSClient\RCSClient.csproj" Description="Scan complete: Upgrade not required for project files.">
+</Event><Event ErrorLevel="0" Project="ApplicationData" Source="ApplicationData\ApplicationData.csproj" Description="Scan complete: Upgrade not required for project files.">
+</Event><Event ErrorLevel="0" Project="Logging" Source="Logging\Logging.csproj" Description="Scan complete: Upgrade not required for project files.">
+</Event><Event ErrorLevel="0" Project="GPSLib" Source="GPSLib\GPSLib.csproj" Description="Scan complete: Upgrade not required for project files.">
+</Event><Event ErrorLevel="0" Project="ErrorLoggingLib" Source="ErrorLoggingLib\ErrorLoggingLib.csproj" Description="Scan complete: Upgrade not required for project files.">
+</Event><Event ErrorLevel="0" Project="EmailServicesLib" Source="SendEmail\EmailServicesLib.csproj" Description="Scan complete: Upgrade not required for project files.">
+</Event><Event ErrorLevel="0" Project="UserSettingsLib" Source="UserSettingsLib\UserSettingsLib.csproj" Description="Scan complete: Upgrade not required for project files.">
+</Event><Event ErrorLevel="0" Project="Encryption" Source="Encryption\Encryption.csproj" Description="Scan complete: Upgrade not required for project files.">
+</Event><Event ErrorLevel="0" Project="FrameGenerator" Source="FrameGenerator\FrameGenerator.csproj" Description="Scan complete: Upgrade not required for project files.">
+</Event><Event ErrorLevel="0" Project="ScreenLogger" Source="ScreenLogger\ScreenLogger.csproj" Description="Scan complete: Upgrade not required for project files.">
+</Event><Event ErrorLevel="0" Project="LPR Monitor" Source="Control Center 2\LPR Monitor.csproj" Description="Scan complete: Upgrade not required for project files.">
+</Event><Event ErrorLevel="0" Project="RemoteHostsLib" Source="RemoteHostsLib\RemoteHostsLib.csproj" Description="Scan complete: Upgrade not required for project files.">
+</Event><Event ErrorLevel="0" Project="Utilities" Source="Utilities\Utilities.csproj" Description="Scan complete: Upgrade not required for project files.">
+</Event><Event ErrorLevel="0" Project="DVR" Source="DVR\DVR.csproj" Description="Scan complete: Upgrade not required for project files.">
+</Event><Event ErrorLevel="0" Project="Paths" Source="Paths\Paths.csproj" Description="Scan complete: Upgrade not required for project files.">
+</Event><Event ErrorLevel="0" Project="LPREngine" Source="LPREngine\LPREngine.csproj" Description="Scan complete: Upgrade not required for project files.">
+</Event><Event ErrorLevel="0" Project="PlateAnalystsWorkstation" Source="AnalystsWorkstation\PlateAnalystsWorkstation.csproj" Description="Scan complete: Upgrade not required for project files.">
+</Event><Event ErrorLevel="0" Project="SmartSearchLib" Source="SmartSearchLib\SmartSearchLib.csproj" Description="Scan complete: Upgrade not required for project files.">
+</Event><Event ErrorLevel="0" Project="EventLogFiles" Source="EventLogFiles\EventLogFiles.csproj" Description="Scan complete: Upgrade not required for project files.">
+</Event><Event ErrorLevel="0" Project="ScalablePictureBox" Source="ScalablePictureBox\ScalablePictureBox.csproj" Description="Scan complete: Upgrade not required for project files.">
+</Event><Event ErrorLevel="0" Project="VideoPlayerUC" Source="VideoPlayerUC\VideoPlayerUC.csproj" Description="Scan complete: Upgrade not required for project files.">
+</Event><Event ErrorLevel="0" Project="VideoPlayerForm" Source="VideoPlayerForm\VideoPlayerForm.csproj" Description="Scan complete: Upgrade not required for project files.">
+</Event><Event ErrorLevel="0" Project="WatchlistProcess" Source="WatchlistProcess\WatchlistProcess.csproj" Description="Scan complete: Upgrade not required for project files.">
+</Event><Event ErrorLevel="0" Project="LPR Service Control" Source="ConfigurePSS\LPR Service Control.csproj" Description="Scan complete: Upgrade not required for project files.">
+</Event><Event ErrorLevel="0" Project="ConfigWatchListsUC" Source="ConfigWatchListsUC\ConfigWatchListsUC.csproj" Description="Scan complete: Upgrade not required for project files.">
+</Event><Event ErrorLevel="0" Project="ConfigureEmailUC" Source="ConfigureEmailUC\ConfigureEmailUC.csproj" Description="Scan complete: Upgrade not required for project files.">
+</Event><Event ErrorLevel="0" Project="ConfigureGPS_UC" Source="ConfigureGPS_UC\ConfigureGPS_UC.csproj" Description="Scan complete: Upgrade not required for project files.">
+</Event><Event ErrorLevel="0" Project="ConfigureSourceChannels" Source="ConfigureSourceChannels\ConfigureSourceChannels.csproj" Description="Scan complete: Upgrade not required for project files.">
+</Event><Event ErrorLevel="0" Project="LPRServiceContainer" Source="LPRServiceContainer\LPRServiceContainer.csproj" Description="Scan complete: Upgrade not required for project files.">
+</Event><Event ErrorLevel="0" Project="GenerateVeryLongWatchList" Source="GenerateVeryLongWatchList\GenerateVeryLongWatchList.csproj" Description="Scan complete: Upgrade not required for project files.">
+</Event><Event ErrorLevel="0" Project="HotSwapForm" Source="HotSwapForm\HotSwapForm.csproj" Description="Scan complete: Upgrade not required for project files.">
+</Event><Event ErrorLevel="0" Project="LPRInteractiveEditUC" Source="LPRInteractiveEditUC\LPRInteractiveEditUC.csproj" Description="Scan complete: Upgrade not required for project files.">
+</Event><Event ErrorLevel="0" Project="LPR GoNoGoStatus" Source="LPR GoNoGoStatus\LPR GoNoGoStatus.csproj" Description="Scan complete: Upgrade not required for project files.">
+</Event><Event ErrorLevel="0" Project="PixelLib" Source="Pixels\PixelLib.csproj" Description="Scan complete: Upgrade not required for project files.">
+</Event><Event ErrorLevel="0" Project="LicenseActivationUC" Source="LicenseActivation\LicenseActivationUC.csproj" Description="Scan complete: Upgrade not required for project files.">
+</Event><Event ErrorLevel="0" Project="KeyFileGenerator" Source="KeyFileGenerator\KeyFileGenerator.csproj" Description="Scan complete: Upgrade not required for project files.">
+</Event><Event ErrorLevel="0" Project="LicenseKeyObject" Source="LicenseKeyObject\LicenseKeyObject.csproj" Description="Scan complete: Upgrade not required for project files.">
+</Event></UpgradeLog>

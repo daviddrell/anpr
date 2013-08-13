@@ -1,0 +1,119 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="3.5" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.21022</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{98C87FB7-2418-4C75-8FEB-65CAD1C1E81F}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>ConfigurePSS</RootNamespace>
+    <AssemblyName>ConfigurePSS</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ConfigurePSSMainForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ConfigurePSSMainForm.Designer.cs">
+      <DependentUpon>ConfigurePSSMainForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="ConfigurePSSMainForm.resx">
+      <DependentUpon>ConfigurePSSMainForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\ApplicationData\ApplicationData.csproj">
+      <Project>{3A8B6996-00B5-4519-B0FF-8B0248B8C66C}</Project>
+      <Name>ApplicationData</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ConfigureEmailUC\ConfigureEmailUC.csproj">
+      <Project>{D90564A3-5712-405D-AFB1-1E7459515FB9}</Project>
+      <Name>ConfigureEmailUC</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ConfigureGPS_UC\ConfigureGPS_UC.csproj">
+      <Project>{76D5DEF1-F030-4D84-B1FE-334C50C9E2F7}</Project>
+      <Name>ConfigureGPS_UC</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ConfigWatchListsUC\ConfigWatchListsUC.csproj">
+      <Project>{7AFFB95D-BEED-43E0-8AD8-91A58C0914BD}</Project>
+      <Name>ConfigWatchListsUC</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ErrorLoggingLib\ErrorLoggingLib.csproj">
+      <Project>{930EBC8F-262C-40E8-A9FC-F1C4CEC27683}</Project>
+      <Name>ErrorLoggingLib</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\SendEmail\EmailServicesLib.csproj">
+      <Project>{3345A8C1-D886-4406-8C38-92DD096037AA}</Project>
+      <Name>EmailServicesLib</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\UserSettingsLib\UserSettingsLib.csproj">
+      <Project>{F1298AA7-7CEA-4420-A495-EFDE0B92CAEF}</Project>
+      <Name>UserSettingsLib</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

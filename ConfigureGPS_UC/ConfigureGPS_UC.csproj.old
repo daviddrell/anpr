@@ -1,0 +1,125 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="3.5" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{76D5DEF1-F030-4D84-B1FE-334C50C9E2F7}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>ConfigureGPS_UC</RootNamespace>
+    <AssemblyName>ConfigureGPS_UC</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="EnterFractional.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="EnterFractional.designer.cs">
+      <DependentUpon>EnterFractional.cs</DependentUpon>
+    </Compile>
+    <Compile Include="enterLocationFractionalPage.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="enterLocationFractionalPage.designer.cs">
+      <DependentUpon>enterLocationFractionalPage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="enterLocationMinSecPage.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="enterLocationMinSecPage.designer.cs">
+      <DependentUpon>enterLocationMinSecPage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EnterMinSec.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="EnterMinSec.designer.cs">
+      <DependentUpon>EnterMinSec.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ConfigureGPS_UC.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ConfigureGPS_UC.Designer.cs">
+      <DependentUpon>ConfigureGPS_UC.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Service Include="{94E38DFF-614B-4cbd-B67C-F211BB35CE8B}" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="EnterFractional.resx">
+      <DependentUpon>EnterFractional.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="enterLocationFractionalPage.resx">
+      <DependentUpon>enterLocationFractionalPage.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="enterLocationMinSecPage.resx">
+      <DependentUpon>enterLocationMinSecPage.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EnterMinSec.resx">
+      <DependentUpon>EnterMinSec.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ConfigureGPS_UC.resx">
+      <DependentUpon>ConfigureGPS_UC.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\ApplicationData\ApplicationData.csproj">
+      <Project>{3A8B6996-00B5-4519-B0FF-8B0248B8C66C}</Project>
+      <Name>ApplicationData</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\UserSettingsLib\UserSettingsLib.csproj">
+      <Project>{F1298AA7-7CEA-4420-A495-EFDE0B92CAEF}</Project>
+      <Name>UserSettingsLib</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

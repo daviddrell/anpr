@@ -1,0 +1,131 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.21022</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{185A6E79-A824-4696-808B-5A2E315DEF3B}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>ScalablePictureBoxTool</RootNamespace>
+    <AssemblyName>ScalablePictureBox</AssemblyName>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <TargetFrameworkVersion>v2.0</TargetFrameworkVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ScalablePictureBox.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ScalablePictureBox.Designer.cs">
+      <DependentUpon>ScalablePictureBox.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PictureTracker.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="PictureTracker.Designer.cs">
+      <DependentUpon>PictureTracker.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="ScalablePictureBoxImp.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ScalablePictureBoxImp.designer.cs">
+      <DependentUpon>ScalablePictureBoxImp.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="TransparentButton.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="TransparentButton.Designer.cs">
+      <DependentUpon>TransparentButton.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Util.cs" />
+    <Service Include="{94E38DFF-614B-4cbd-B67C-F211BB35CE8B}" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="ScalablePictureBoxImp.resx">
+      <DependentUpon>ScalablePictureBoxImp.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="ZoomIn32.cur" />
+    <EmbeddedResource Include="ZoomOut32.cur" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="ScalablePictureBox.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>ScalablePictureBox.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PictureTracker.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>PictureTracker.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <SubType>Designer</SubType>
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TransparentButton.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>TransparentButton.cs</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Hand.cur" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="showActualSize.gif" />
+    <EmbeddedResource Include="showFitWidth.gif" />
+    <EmbeddedResource Include="showWhole.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Tracker.cur" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="close.gif" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

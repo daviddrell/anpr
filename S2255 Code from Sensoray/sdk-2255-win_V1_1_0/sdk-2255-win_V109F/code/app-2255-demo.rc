@@ -1,0 +1,564 @@
+//Microsoft Developer Studio generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// English (U.S.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE MOVEABLE PURE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE MOVEABLE PURE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE MOVEABLE PURE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)\r\n"
+    "LANGUAGE 9, 1\r\n"
+    "#pragma code_page(1252)\r\n"
+    "#include ""res\\app-2255-demo.rc2""  // non-Microsoft Visual C++ edited resources\r\n"
+    "#include ""afxres.rc""         // Standard components\r\n"
+    "#include ""afxprint.rc""       // printing/print preview resources\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON    DISCARDABLE     "res\\app-2255-demo.ico"
+IDR_app2255demoTYPE     ICON    DISCARDABLE     "res\\app-2255-demoDoc.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDR_MAINFRAME           BITMAP  MOVEABLE PURE   "res\\Toolbar.bmp"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Toolbar
+//
+
+IDR_MAINFRAME TOOLBAR MOVEABLE PURE  16, 15
+BEGIN
+    BUTTON      ID_FILE_NEW
+    BUTTON      ID_FILE_OPEN
+    BUTTON      ID_FILE_SAVE
+    SEPARATOR
+    BUTTON      ID_EDIT_CUT
+    BUTTON      ID_EDIT_COPY
+    BUTTON      ID_EDIT_PASTE
+    SEPARATOR
+    BUTTON      ID_FILE_PRINT
+    BUTTON      ID_APP_ABOUT
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+IDR_MAINFRAME MENU DISCARDABLE 
+BEGIN
+    POPUP "&File"
+    BEGIN
+        MENUITEM SEPARATOR
+        MENUITEM "E&xit",                       ID_APP_EXIT
+    END
+    POPUP "&View"
+    BEGIN
+        MENUITEM "&Status Bar",                 ID_VIEW_STATUS_BAR
+        MENUITEM "&Display Images",             ID_VIEW_DISPLAYIMAGE
+        MENUITEM "&Frame Rate",                 ID_VIEW_FRAMERATE
+    END
+    POPUP "Acquire"
+    BEGIN
+        MENUITEM "Sta&rt 1\tCtrl-1",            ID_ACQUIRE_START
+        MENUITEM "Sto&p  1\tShft-1",            ID_ACQUIRE_STOP
+        MENUITEM "Start 2\tCtrl-2",             ID_ACQUIRE_START2
+        MENUITEM "Stop  2\tShft-2",             ID_ACQUIRE_STOP2
+        MENUITEM "Start 3\tCtrl-3",             ID_ACQUIRE_START3
+        MENUITEM "Stop  3\tShft-3",             ID_ACQUIRE_STOP3
+        MENUITEM "Start 4\tCtrl-4",             ID_ACQUIRE_START4
+        MENUITEM "Stop  4\tShft-4",             ID_ACQUIRE_STOP4
+        MENUITEM "Start ALL\t]",                ID_ACQUIRE_STARTALL
+        MENUITEM "Stop ALL\t[",                 ID_ACQUIRE_STOPALL
+    END
+    POPUP "Snapshots"
+    BEGIN
+        MENUITEM "Channel 1",                   ID_SNAPSHOTS_CHANNEL1
+        MENUITEM "Channel 2",                   ID_SNAPSHOTS_CHANNEL2
+        MENUITEM "Channel 3",                   ID_SNAPSHOTS_CHANNEL3
+        MENUITEM "Channel 4",                   ID_SNAPSHOTS_CHANNEL4
+    END
+    POPUP "Settings"
+    BEGIN
+        MENUITEM "Channel 1",                   ID_SETTINGS_CHANNEL1
+        MENUITEM "Channel 2",                   ID_SETTINGS_CHANNEL2
+        MENUITEM "Channel 3",                   ID_SETTINGS_CHANNEL3
+        MENUITEM "Channel 4",                   ID_SETTINGS_CHANNEL4
+        MENUITEM "All Channels",                ID_SETTINGS_ALLCHANNELS
+    END
+    POPUP "&Tools"
+    BEGIN
+        MENUITEM "Video Status",                ID_TOOLS_VIDEOSTATUS
+        MENUITEM "Query FW(debug only)",        ID_TOOLS_QUERYFW
+    END
+    POPUP "&Help"
+    BEGIN
+        MENUITEM "&About app-2255-demo...",     ID_APP_ABOUT
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Accelerator
+//
+
+IDR_MAINFRAME ACCELERATORS MOVEABLE PURE 
+BEGIN
+    "1",            ID_ACQUIRE_START,       VIRTKEY, CONTROL, NOINVERT
+    "2",            ID_ACQUIRE_START2,      VIRTKEY, CONTROL, NOINVERT
+    "3",            ID_ACQUIRE_START3,      VIRTKEY, CONTROL, NOINVERT
+    "4",            ID_ACQUIRE_START4,      VIRTKEY, CONTROL, NOINVERT
+    "]",            ID_ACQUIRE_STARTALL,    ASCII,  NOINVERT
+    "1",            ID_ACQUIRE_STOP,        VIRTKEY, SHIFT, NOINVERT
+    "2",            ID_ACQUIRE_STOP2,       VIRTKEY, SHIFT, NOINVERT
+    "3",            ID_ACQUIRE_STOP3,       VIRTKEY, SHIFT, NOINVERT
+    "4",            ID_ACQUIRE_STOP4,       VIRTKEY, SHIFT, NOINVERT
+    "[",            ID_ACQUIRE_STOPALL,     ASCII,  NOINVERT
+    "C",            ID_EDIT_COPY,           VIRTKEY, CONTROL, NOINVERT
+    VK_INSERT,      ID_EDIT_COPY,           VIRTKEY, CONTROL, NOINVERT
+    VK_DELETE,      ID_EDIT_CUT,            VIRTKEY, SHIFT, NOINVERT
+    "X",            ID_EDIT_CUT,            VIRTKEY, CONTROL, NOINVERT
+    "V",            ID_EDIT_PASTE,          VIRTKEY, CONTROL, NOINVERT
+    VK_INSERT,      ID_EDIT_PASTE,          VIRTKEY, SHIFT, NOINVERT
+    VK_BACK,        ID_EDIT_UNDO,           VIRTKEY, ALT, NOINVERT
+    "Z",            ID_EDIT_UNDO,           VIRTKEY, CONTROL, NOINVERT
+    "N",            ID_FILE_NEW,            VIRTKEY, CONTROL, NOINVERT
+    "O",            ID_FILE_OPEN,           VIRTKEY, CONTROL, NOINVERT
+    "P",            ID_FILE_PRINT,          VIRTKEY, CONTROL, NOINVERT
+    "S",            ID_FILE_SAVE,           VIRTKEY, CONTROL, NOINVERT
+    VK_F6,          ID_NEXT_PANE,           VIRTKEY, NOINVERT
+    VK_F6,          ID_PREV_PANE,           VIRTKEY, SHIFT, NOINVERT
+    "T",            ID_ACQUIRE_TEST,        VIRTKEY, CONTROL, NOINVERT
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ABOUTBOX DIALOG DISCARDABLE  0, 0, 256, 103
+STYLE DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "About app-2255-demo"
+FONT 8, "MS Shell Dlg"
+BEGIN
+    ICON            IDR_MAINFRAME,IDC_STATIC,11,17,21,20
+    LTEXT           "app-2255-demo Version 1.0.9",IDC_STATIC,40,10,119,8,
+                    SS_NOPREFIX
+    LTEXT           "Copyright (C) 2007-2008 Sensoray Company Inc.",
+                    IDC_STATIC,40,25,162,8
+    DEFPUSHBUTTON   "OK",IDOK,199,7,50,16,WS_GROUP
+    LTEXT           "This code may be used as a starting point for custom apps.",
+                    IDC_STATIC,36,39,190,8
+END
+
+IDD_SETTINGS DIALOGEX 0, 0, 237, 153
+STYLE DS_FIXEDSYS | WS_CHILD | WS_DISABLED | WS_CAPTION
+CAPTION "Levels"
+FONT 8, "MS Shell Dlg", 0, 0, 0x1
+BEGIN
+    CONTROL         "",IDC_SLIDER_BRIGHT,"msctls_trackbar32",TBS_BOTH | 
+                    TBS_NOTICKS | WS_TABSTOP,94,32,100,15
+    CONTROL         "",IDC_SLIDER_CONTRAST,"msctls_trackbar32",TBS_BOTH | 
+                    TBS_NOTICKS | WS_TABSTOP,94,54,100,15
+    CONTROL         "",IDC_SLIDER_SAT,"msctls_trackbar32",TBS_BOTH | 
+                    TBS_NOTICKS | WS_TABSTOP,94,76,100,15
+    LTEXT           "Brightness",IDC_STATIC,40,36,34,8
+    LTEXT           "Contrast",IDC_STATIC,45,58,29,8
+    LTEXT           "Saturation",IDC_STATIC,40,80,34,8
+    LTEXT           "Hue",IDC_STATIC,60,102,14,8
+    CONTROL         "",IDC_SLIDER_HUE,"msctls_trackbar32",TBS_BOTH | 
+                    TBS_NOTICKS | WS_TABSTOP,94,98,100,15
+    PUSHBUTTON      "Defaults",IDC_BTN_VIDDEFAULTS,138,122,50,14
+    LTEXT           "Static",IDC_STATIC_BRIGHT,196,35,19,8
+    LTEXT           "Static",IDC_STATIC_CONTRAST,196,57,19,8
+    LTEXT           "Static",IDC_STATIC_SAT,196,79,19,8
+    LTEXT           "Static",IDC_STATIC_HUE,196,101,19,8
+END
+
+IDD_PROPPAGE_DECIMATION DIALOGEX 0, 0, 260, 158
+STYLE DS_FIXEDSYS | WS_CHILD | WS_DISABLED | WS_CAPTION
+CAPTION "Decimation"
+FONT 8, "MS Shell Dlg", 0, 0, 0x1
+BEGIN
+    GROUPBOX        "Frame Rate",IDC_STATIC,26,40,218,69
+    CONTROL         "Normal",IDC_RADIO_FR1,"Button",BS_AUTORADIOBUTTON | 
+                    WS_GROUP,45,69,38,10
+    CONTROL         "Div 2",IDC_RADIO_FR2,"Button",BS_AUTORADIOBUTTON,95,69,
+                    32,10
+    CONTROL         "Div 3",IDC_RADIO_FR3,"Button",BS_AUTORADIOBUTTON,139,69,
+                    32,10
+    CONTROL         "Div 5",IDC_RADIO_FR5,"Button",BS_AUTORADIOBUTTON,183,69,
+                    32,10
+END
+
+IDD_PROPPAGE_FORMAT DIALOGEX 0, 0, 235, 156
+STYLE DS_FIXEDSYS | WS_CHILD | WS_DISABLED | WS_CAPTION
+CAPTION "Video Format"
+FONT 8, "MS Shell Dlg", 0, 0, 0x1
+BEGIN
+    GROUPBOX        "Video Format",IDC_STATIC,36,34,145,55
+    CONTROL         "NTSC",IDC_RADIO_NTSC,"Button",BS_AUTORADIOBUTTON | 
+                    WS_GROUP,45,58,33,10
+    CONTROL         "PAL",IDC_RADIO_PAL,"Button",BS_AUTORADIOBUTTON,92,58,28,
+                    10
+    CONTROL         "SECAM",IDC_RADIO_SECAM,"Button",BS_AUTORADIOBUTTON,134,
+                    58,39,10
+END
+
+IDD_PROPPAGE_SCALE DIALOGEX 0, 0, 235, 156
+STYLE DS_FIXEDSYS | WS_CHILD | WS_DISABLED | WS_CAPTION
+CAPTION "Scale"
+FONT 8, "MS Shell Dlg", 0, 0, 0x1
+BEGIN
+    GROUPBOX        "Scale",IDC_STATIC,25,42,177,62
+    CONTROL         "4CIFS",IDC_RADIO_4CIFS,"Button",BS_AUTORADIOBUTTON | 
+                    WS_GROUP,52,63,35,10
+    CONTROL         "2CIFS",IDC_RADIO_2CIFS,"Button",BS_AUTORADIOBUTTON,95,
+                    63,35,10
+    CONTROL         "1CIFS",IDC_RADIO_1CIFS,"Button",BS_AUTORADIOBUTTON,138,
+                    63,35,10
+    CONTROL         "4CIFS(interpolated)",IDC_RADIO_4CIFSI,"Button",
+                    BS_AUTORADIOBUTTON,52,80,77,10
+END
+
+IDD_PROPPAGE_COLOR DIALOGEX 0, 0, 237, 161
+STYLE DS_FIXEDSYS | WS_CHILD | WS_DISABLED | WS_CAPTION
+CAPTION "Color Format"
+FONT 8, "MS Shell Dlg", 0, 0, 0x1
+BEGIN
+    CONTROL         "YUV Planar",IDC_RADIO_YUVPL,"Button",BS_AUTORADIOBUTTON | 
+                    NOT WS_VISIBLE | WS_GROUP,7,7,51,10
+    GROUPBOX        "Formats",IDC_STATIC,63,24,121,91
+    CONTROL         "YUY2 (YUV packed)",IDC_RADIO_YUVPK,"Button",
+                    BS_AUTORADIOBUTTON | NOT WS_VISIBLE,7,30,77,10
+    CONTROL         "RGB",IDC_RADIO_RGB,"Button",BS_AUTORADIOBUTTON,83,46,29,
+                    10
+    CONTROL         "Monochrome",IDC_RADIO_Y8,"Button",BS_AUTORADIOBUTTON,83,
+                    72,57,10
+    CONTROL         "Jpg",IDC_RADIO_JPEG,"Button",BS_AUTORADIOBUTTON,83,94,
+                    27,10
+    CONTROL         "",IDC_SLIDER_JPEG_QUALITY,"msctls_trackbar32",TBS_BOTH | 
+                    TBS_NOTICKS | WS_TABSTOP,71,126,100,15
+    LTEXT           "JPEG Quality",IDC_STATIC_JPEG_QUALITY,22,129,42,8
+END
+
+
+#ifndef _MAC
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,9,11
+ PRODUCTVERSION 1,0,9,6
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "040904e4"
+        BEGIN
+            VALUE "Comments", "\0"
+            VALUE "CompanyName", "Sensoray Company Inc.\0"
+            VALUE "FileDescription", "app-2255-demo\0"
+            VALUE "FileVersion", "1.0.9.11\0"
+            VALUE "InternalName", "app-2255-demo.exe (JPEG capable)\0"
+            VALUE "LegalCopyright", "Copyright Sensoray Company Inc. 2007-2009\0"
+            VALUE "LegalTrademarks", "\0"
+            VALUE "OriginalFilename", "app-2255-demo.exe\0"
+            VALUE "PrivateBuild", "\0"
+            VALUE "ProductName", "Sensoray 2255 USB Capture\0"
+            VALUE "ProductVersion", "1.0.9.6\0"
+            VALUE "SpecialBuild", "\0"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x409, 1252
+    END
+END
+
+#endif    // !_MAC
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO MOVEABLE PURE 
+BEGIN
+    IDD_ABOUTBOX, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 249
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 96
+    END
+
+    IDD_SETTINGS, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 230
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 146
+    END
+
+    IDD_PROPPAGE_DECIMATION, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 253
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 151
+    END
+
+    IDD_PROPPAGE_FORMAT, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 228
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 149
+    END
+
+    IDD_PROPPAGE_SCALE, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 228
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 149
+    END
+
+    IDD_PROPPAGE_COLOR, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 230
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 154
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDR_MAINFRAME           "app-2255-demo\n\napp-2255-demo\n\n\napp2255demo.Document\napp-2255-demo.Document"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    AFX_IDS_APP_TITLE       "app-2255-demo"
+    AFX_IDS_IDLEMESSAGE     "Ready"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_INDICATOR_EXT        "EXT"
+    ID_INDICATOR_CAPS       "CAP"
+    ID_INDICATOR_NUM        "NUM"
+    ID_INDICATOR_SCRL       "SCRL"
+    ID_INDICATOR_OVR        "OVR"
+    ID_INDICATOR_REC        "REC"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_FILE_NEW             "Create a new document\nNew"
+    ID_FILE_OPEN            "Open an existing document\nOpen"
+    ID_FILE_CLOSE           "Close the active document\nClose"
+    ID_FILE_SAVE            "Save the active document\nSave"
+    ID_FILE_SAVE_AS         "Save the active document with a new name\nSave As"
+    ID_FILE_PAGE_SETUP      "Change the printing options\nPage Setup"
+    ID_FILE_PRINT_SETUP     "Change the printer and printing options\nPrint Setup"
+    ID_FILE_PRINT           "Print the active document\nPrint"
+    ID_FILE_PRINT_PREVIEW   "Display full pages\nPrint Preview"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_APP_ABOUT            "Display program information, version number and copyright\nAbout"
+    ID_APP_EXIT             "Quit the application; prompts to save documents\nExit"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_FILE_MRU_FILE1       "Open this document"
+    ID_FILE_MRU_FILE2       "Open this document"
+    ID_FILE_MRU_FILE3       "Open this document"
+    ID_FILE_MRU_FILE4       "Open this document"
+    ID_FILE_MRU_FILE5       "Open this document"
+    ID_FILE_MRU_FILE6       "Open this document"
+    ID_FILE_MRU_FILE7       "Open this document"
+    ID_FILE_MRU_FILE8       "Open this document"
+    ID_FILE_MRU_FILE9       "Open this document"
+    ID_FILE_MRU_FILE10      "Open this document"
+    ID_FILE_MRU_FILE11      "Open this document"
+    ID_FILE_MRU_FILE12      "Open this document"
+    ID_FILE_MRU_FILE13      "Open this document"
+    ID_FILE_MRU_FILE14      "Open this document"
+    ID_FILE_MRU_FILE15      "Open this document"
+    ID_FILE_MRU_FILE16      "Open this document"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_NEXT_PANE            "Switch to the next window pane\nNext Pane"
+    ID_PREV_PANE            "Switch back to the previous window pane\nPrevious Pane"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_WINDOW_SPLIT         "Split the active window into panes\nSplit"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_EDIT_CLEAR           "Erase the selection\nErase"
+    ID_EDIT_CLEAR_ALL       "Erase everything\nErase All"
+    ID_EDIT_COPY            "Copy the selection and put it on the Clipboard\nCopy"
+    ID_EDIT_CUT             "Cut the selection and put it on the Clipboard\nCut"
+    ID_EDIT_FIND            "Find the specified text\nFind"
+    ID_EDIT_PASTE           "Insert Clipboard contents\nPaste"
+    ID_EDIT_REPEAT          "Repeat the last action\nRepeat"
+    ID_EDIT_REPLACE         "Replace specific text with different text\nReplace"
+    ID_EDIT_SELECT_ALL      "Select the entire document\nSelect All"
+    ID_EDIT_UNDO            "Undo the last action\nUndo"
+    ID_EDIT_REDO            "Redo the previously undone action\nRedo"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_VIEW_TOOLBAR         "Show or hide the toolbar\nToggle ToolBar"
+    ID_VIEW_STATUS_BAR      "Show or hide the status bar\nToggle StatusBar"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    AFX_IDS_SCSIZE          "Change the window size"
+    AFX_IDS_SCMOVE          "Change the window position"
+    AFX_IDS_SCMINIMIZE      "Reduce the window to an icon"
+    AFX_IDS_SCMAXIMIZE      "Enlarge the window to full size"
+    AFX_IDS_SCNEXTWINDOW    "Switch to the next document window"
+    AFX_IDS_SCPREVWINDOW    "Switch to the previous document window"
+    AFX_IDS_SCCLOSE         "Close the active window and prompts to save the documents"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    AFX_IDS_SCRESTORE       "Restore the window to normal size"
+    AFX_IDS_SCTASKLIST      "Activate Task List"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    AFX_IDS_PREVIEW_CLOSE   "Close print preview mode\nCancel Preview"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_VIEW_DISPLAYIMAGE    "Display Captured Image"
+    ID_VIEW_FRAMERATE       "Display the framerate"
+    ID_ACQUIRE_STOP         "Stop Image Acquisition Channel 0"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_ACQUIRE_START        "Start Image Acquisition"
+END
+
+#endif    // English (U.S.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+LANGUAGE 9, 1
+#pragma code_page(1252)
+#include "res\app-2255-demo.rc2"  // non-Microsoft Visual C++ edited resources
+#include "afxres.rc"         // Standard components
+#include "afxprint.rc"       // printing/print preview resources
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+
